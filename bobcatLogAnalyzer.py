@@ -13,7 +13,7 @@ def parse_line(line):
         date_object = datetime.strptime(date_string, "%Y-%m-%dT%H:%M:%S.%fZ")
         beaconIdRegex = re.compile(r'beacon_id="(.*?)"')
         matchobject = beaconIdRegex.search(line)
-        print("Becaon at " + str(date_object) + "ID is: " + str(matchobject.group(1)))
+        print("Becaon at " + str(date_object) + "   ID is: " + str(matchobject.group(1)))
 #        print(line)
 
 def main(argv):
