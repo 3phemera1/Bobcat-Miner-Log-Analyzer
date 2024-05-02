@@ -25,7 +25,7 @@ gateway_rs::gateway: rx2 downlink @237113122 us, 924.50 MHz, DataRate(SF10, BW50
 
 gateway_rs::service::conduit: initialized session module="packet_router" session_key=139pdhQmwQXtgG91FGnMEh1Y8ty4wWwtQR4WggBbGhbh49NPgnv
 
-gateway_rs::server: starting server version=1.3.0 key=11TNrNfTLVqwMsbGxBqwuwbP46Nqj4BFfGHgRRthD5PUPTnreCi
+gateway_rs::server: starting server version=1.3.0 key=12TNrNfTLVqwMsbGxBqwuwbP46Nqj4BFfGHgRSthD5PUPTnreCi
 		
 gateway_rs::beaconer: starting beacon_interval=21600 disabled=false uri=http://mainnet-pociot.helium.io:9080/
 gateway_rs::beaconer: shutting down
