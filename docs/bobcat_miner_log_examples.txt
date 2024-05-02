@@ -1,0 +1,36 @@
+gateway_rs::api/server: starting listen=XXX.XXX.XXX.XXX:YYYY
+
+gateway_rs::region_watcher: starting   DATA
+gateway_rs::region_watcher: starting default_region=US915
+gateway_rs::region_watcher: shutting down
+		
+
+gateway_rs::packet_router: starting uri=http://mainnet-router.helium.io:8080/
+gateway_rs::packet_router: : shutting down
+gateway_rs::packet_router: discarded queued packets" DATA
+
+gateway_rs::gateway: starting listen="0.0.0.0:1680"
+gateway_rs::gateway: shutting down
+gateway_rs::gateway: region updated region="US915"
+gateway_rs::gateway: new packet forwarder client mac=AA:E8:78:29:56:25:A6:BB addr=127.0.0.1:49535
+gateway_rs::gateway: mac existed, but IP updated mac=AA:E8:78:29:56:25:A6:BB addr=127.0.0.1:49535
+gateway_rs::gateway: disconnected packet forwarder mac=AA:E8:78:29:56:25:A6:BB addr=127.0.0.1:49535
+gateway_rs::gateway: ignoring non-uplink packet DATA
+gateway_rs::gateway: ignoring send to client with unknown MAC mac=AA:E8:78:29:56:25:A6:BB
+gateway_rs::gateway: ignored potential beacon, no region downloadlink_mac=AA:E8:78:29:56:25:A6:BB uplink=DATA
+gateway_rs::gateway: received potential beacon downloadlink_mac=AA:E8:78:29:56:25:A6:BB uplink=DATA
+gateway_rs::gateway: starting default_region=US915
+gateway_rs::gateway: rx1 downlink @237113122 us, 924.50 MHz, DataRate(SF10, BW500), len: 17 downlink_mac=AA:E8:78:29:56:25:A6:BB
+gateway_rs::gateway: rx2 downlink @237113122 us, 924.50 MHz, DataRate(SF10, BW500), len: 17 downlink_mac=AA:E8:78:29:56:25:A6:BB
+
+gateway_rs::service::conduit: initialized session module="packet_router" session_key=139pdhQmwQXtgG91FGnMEh1Y8ty4wWwtQR4WggBbGhbh49NPgnv
+
+gateway_rs::server: starting server version=1.3.0 key=11TNrNfTLVqwMsbGxBqwuwbP46Nqj4BFfGHgRRthD5PUPTnreCi
+		
+gateway_rs::beaconer: starting beacon_interval=21600 disabled=false uri=http://mainnet-pociot.helium.io:9080/
+gateway_rs::beaconer: shutting down
+gateway_rs::beaconer: next beacon time beacon_time=2023-12-11 2:58:34.0 +00:00:00
+gateway_rs::beaconer: region updated region="US915"
+gateway_rs::beaconer: transmitting beacon beacon_id="wpq07x+yPBzws4Y6SI2q2IIQvrSWeKShNkIS9HWnpbJWQLFv6E2jqL+bIjGwH4FBkL88"
+gateway_rs::beaconer: poc witness report submitted beacon_id="3i2iZH81ui2+EcT9OgYH0usp/shx14SLQPysh+PMB2pAuZRjzIIBySV+A/g9+j87daZ8"
+gateway_rs::beaconer: ignoring duplicate or self beacon witness beacon_id=zTKikoWQnX+ONjk4nH+e99ztNxL9ehwdfMqNnRxgFGngq5yMj96OiTzwvHplbt52Fwha
