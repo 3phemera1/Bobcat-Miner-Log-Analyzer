@@ -4,6 +4,7 @@ import sys
 from requests.auth import HTTPBasicAuth
 import re
 from datetime import datetime
+import os.path
 
 def parse_line(line):
     beaconOutRegex = re.compile(r'poc beacon report')
@@ -48,9 +49,14 @@ def parse_line(line):
 
 def main(argv):
     if len(argv) < 2:
-        print("Usage: ./bobcatLogAnalyzer.py IP_ADDRESS")
-        exit(1)
-    IP = argv[1]
+        if os.path.isfile('.bobcatAnalyzer.rc'):
+            with open('.bobcatAnalyzer.rc') as f:
+                IP = f.readline().rstrip()
+        else:
+            print("Usage: ./bobcatLogAnalyzer.py IP_ADDRESS")
+            exit(1)
+    else:
+        IP = argv[1]
     url = 'http://' + IP + '/log/console.log'
     res = requests.get(url, auth=HTTPBasicAuth('bobcat', 'miner'))
     for line in res.iter_lines():
